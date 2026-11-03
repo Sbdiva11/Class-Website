@@ -6,6 +6,7 @@ p{
 img{
     height: 200px;
     border: 5px solid black;
+    margin: 10px;
 
 }
 
@@ -13,6 +14,12 @@ h1{
     text-align: center;
     color: black;
     background-color: yellow;
+}
+h2{
+        text-align: center;
+        color: black;
+        background-color: yellow;
+        margin: 10px;
 }
 .fav{
     color:red;
@@ -30,6 +37,13 @@ h1{
     font-size: 20px;
 }
 
+#friends{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: silver;
+}
+
 .star{
     color: pink;
     font-size: 20px;
@@ -40,11 +54,29 @@ h1{
     font-size: 20px;
 }
 
+.sandy{
+    color: brown;
+    font-size: 20px;
+}
 #krusty-krab{
     text-align: center;
-    background-color: brown;
     width: 400px;
     padding: 10px;
     border: 20px solid red;
-    color: white;
+    color:  green
 }
+@media (min-width: 640px) {
+  .friends {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .friends {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (max-width: 600px) {
+  <h1> {
+    min-height: 58px;
+    padding: 0 20px;
+  }
