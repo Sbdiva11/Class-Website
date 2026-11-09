@@ -1,5 +1,6 @@
 p{
-    color:red;
+    color:rgb(159, 12, 12);
+    font-style: bold;
     
 }
 
@@ -16,7 +17,7 @@ h1{
     background-color: yellow;
 }
 .fav{
-    color:red;
+    color:rgb(189, 158, 0);
     font-size: 20px;
 }
 
@@ -27,7 +28,7 @@ h1{
 }
 
 .sponge{
-    color: gold;
+    color: rgb(217, 127, 0);
     font-size: 20px;
 }
 
@@ -38,7 +39,7 @@ h1{
     color: silver;
 }
 .star{
-    color: pink;
+    color: rgb(231, 0, 127);
     font-size: 20px;
 }
 
@@ -58,12 +59,8 @@ h1{
     border: 20px solid red;
     color:  green
 }
-/* ==================================================
-   1. MOBILE DEFAULT VIEWPORT (320px - 767px)
-   ================================================== */
 
-/* Universal sizing reset to eliminate layout overflow */
-* {
+{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -78,7 +75,6 @@ body {
     overflow-x: hidden; /* Guarantees no horizontal scrolling */
 }
 
-/* Fluid image scaling prevents content overflow */
 img {
     max-width: 100%;
     height: auto;
@@ -108,7 +104,6 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Mobile Nav: Full-width stacked links */
 nav ul {
     list-style: none;
     display: flex;
@@ -128,7 +123,6 @@ nav a {
     font-weight: bold;
 }
 
-/* Friends Section: Single-column vertical stack */
 #friends {
     display: flex;
     flex-direction: column;
@@ -151,61 +145,48 @@ ol, ul {
 footer {
     text-align: center;
     padding: 1.25rem;
-    background-color: #006064;
+    background-color: #cff5f6;
     color: #ffffff;
     border-radius: 6px;
     margin-top: 2rem;
 }
 
-
-/* ==================================================
-   2. TABLET BREAKPOINT (@media min-width: 768px)
-   ================================================== */
 @media (min-width: 768px) {
     
     h1 {
         font-size: 2.2rem;
     }
 
-    /* Nav shifts from vertical stack to horizontal row */
     nav ul {
         flex-direction: row;
         justify-content: center;
         gap: 0.75rem;
     }
 
-    /* Friends section converts to a 2-column Grid */
     #friends {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
     }
 
-    /* Spans Sandy's card across both columns for a balanced tablet grid */
     #friends article:last-child {
         grid-column: span 2;
     }
 }
 
 
-/* ==================================================
-   3. DESKTOP BREAKPOINT (@media min-width: 1200px)
-   ================================================== */
 @media (min-width: 1200px) {
     
-    /* Center and constrain maximum canvas width */
     body {
         max-width: 1200px;
         margin: 0 auto;
         padding: 2rem;
     }
 
-    /* Friends section expands into a 3-column Grid */
     #friends {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Resets Sandy's card to 1 column for 3 side-by-side cards */
     #friends article:last-child {
         grid-column: span 1;
     }
