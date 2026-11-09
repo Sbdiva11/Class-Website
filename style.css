@@ -17,18 +17,17 @@ h1{
     background-color: yellow;
 }
 .fav{
-    color:rgb(189, 158, 0);
+    color:rgb(0, 110, 101);
     font-size: 20px;
 }
 
 #about{
-    background-color:whitesmoke;
+    background-color:rgb(255, 255, 193);
     padding: 10px;
-    color: gold;
 }
 
 .sponge{
-    color: rgb(217, 127, 0);
+    color: rgb(0, 105, 114);
     font-size: 20px;
 }
 
@@ -39,8 +38,9 @@ h1{
     color: silver;
 }
 .star{
-    color: rgb(231, 0, 127);
+    color: rgb(178, 1, 98);
     font-size: 20px;
+
 }
 
 .squid{
